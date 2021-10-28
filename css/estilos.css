@@ -1,12 +1,14 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 .container {
     width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(5, 10, 5, 0.80), rgb(230, 249, 255)), url(imagenes/fondo.jpg);
+    height: auto;
+    padding: 15px;
+    background-image: linear-gradient(rgba(80, 151, 160, 0.8), rgb(57, 209, 255)), url(imagenes/fondo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,7 +24,8 @@
 }
 
 .logo {
-    width: 500px;
+    display: flex;
+    width: 250px;
     cursor: pointer;
 }
 
@@ -36,8 +39,8 @@
 
 .navbar ul li a {
     text-decoration: none;
-    color: white;
-    font-family: Roboto, "sans-serif";
+    color: black;
+    font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
 }
 
@@ -45,7 +48,7 @@
     content: "";
     height: 3px;
     width: 0%;
-    background:#00deff;
+    background:black;
     position: absolute;
     left: 0;
     bottom: -12px;
@@ -55,3 +58,44 @@
 .navbar ul li:hover::before {
     width: 100%;
 }
+
+.imagen-presentacion {
+    background-image: url(imagenes/presentacion.jpg);
+    background-size:100% 95%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 85vh;
+    display: flex;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color:black;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+ }
+
+ .iconos-footer{
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    padding: 20px;
+ }
+
+
+@media (max-width:320px){
+    <!—- Aquí van todos los estilos CSS -->
+  }
+
+@media (max-width:768px){
+     
+    <!—- Aquí van todos los estilos CSS -->
+    
+}
+
+@media (max-width:320px){
+    <!—- Aquí van todos los estilos CSS -->
+  }
