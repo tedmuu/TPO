@@ -5,13 +5,19 @@
 }
 
 .container {
-    width: 100%;
+    width: 200%;
     height: auto;
-    padding: 15px;
-    background-image: linear-gradient(rgba(80, 151, 160, 0.8), rgb(57, 209, 255)), url(imagenes/fondo.jpg);
+    padding: flex;
+    background-image: linear-gradient(rgba(80, 151, 160, 0.8), rgb(57, 209, 255)), url('imagenes/fondo.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.logo {
+    display: flex;
+    width: 150px;
+    cursor: pointer;
 }
 
 .navbar {
@@ -21,12 +27,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.logo {
-    display: flex;
-    width: 250px;
-    cursor: pointer;
 }
 
 .navbar ul li {
@@ -59,20 +59,9 @@
     width: 100%;
 }
 
-.imagen-presentacion {
-    background-image: url(imagenes/presentacion.jpg);
-    background-size:100% 95%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 85vh;
-    display: flex;
-}
 
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    width: auto;
     color:black;
     text-align: center;
     font-family: 'Lato', sans-serif;
@@ -84,6 +73,58 @@
     color: black;
     padding: 20px;
  }
+
+.slide_mod{
+    color: black; 
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    
+}
+
+.form-suscribir{
+    width: 600px;
+    background: #50c1df;
+    padding: 40px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+    color:white
+
+}
+.form-suscribir h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.form-suscribir h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-suscribir{
+    width: 100%;
+    background: #50c1df;
+    padding: 10;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #042a8c;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+.form-suscribir .boton-suscribir{
+    width: 100%;
+    background: #0854a0;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+
+}
+
 
 
 @media (max-width:320px){
