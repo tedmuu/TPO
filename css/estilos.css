@@ -11,7 +11,7 @@ body{
 
 .contenedor{
     width: 90%;
-    max-width: 1000px;
+    max-width: 2000px;
     margin: 20px auto;
     display: grid;
     grid-gap: 20px;
@@ -35,7 +35,7 @@ body{
 }
 
 .contenedor .header {
-    background: #343434;
+    background: url(../imagenes/salto-angel.jpg);
     color: #fff;
     grid-area: header;
     grid-template-columns:  1fr 1fr;
@@ -175,6 +175,42 @@ body{
 
 }
 
+img{
+    width: 100%;
+}
+
+.contenedor .contenido a{
+    text-decoration: none;
+    color: white;
+    background: #0854a0;
+    padding: 8px;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+
+.contenedor .contenido a:hover{
+    background: #1a78d6;
+}
+
+.contenedor .contenido .tarjeta{
+    width: 240px;
+    border: solid rgb(153, 153, 153) 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.contenedor .contenido .descripcion{
+    padding: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contenido .recetas{
+    display: flex;
+    justify-content: space-around;
+}
 @media screen and (max-width:768px) {
     .contenedor{
         grid-template-areas:
@@ -202,5 +238,11 @@ body{
         margin-top: 100px;
         border-radius: 4px;
     
+    }
+
+    .contenido .recetas{
+        display: grid;
+        margin: 20px auto;
+        grid-gap: 20px;
     }
 }
