@@ -35,7 +35,7 @@ body{
 }
 
 .contenedor .header {
-    background: url(../imagenes/salto-angel.jpg);
+    background: url(../imagenes/cabezera.png);
     color: #fff;
     grid-area: header;
     grid-template-columns:  1fr 1fr;
@@ -52,8 +52,8 @@ body{
     height: 200px;
     text-align: center;
     display:flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    justify-content: space-around;
 }
 
 .contenedor .widget{
@@ -160,8 +160,6 @@ body{
     border-radius: 4px;
     margin-bottom: 16px;
     border: 1px solid #042a8c;
-    /* font-family: 'Lato', sans-serif;
-    font-size: 18px; */
 }
 
 .form-suscribir .boton-suscribir{
@@ -211,27 +209,66 @@ img{
     display: flex;
     justify-content: space-around;
 }
+.contenido .reseña,
+.contenido .ing-receta,
+.contenido .paso-paso{
+    text-align: justify;
+    padding: 20px;
+}
+.ing-receta ul li{
+    list-style-type: square; 
+}
+
+.paso-paso ol {
+    list-style-type: none;
+    counter-reset: lista-personalizada;
+    margin: 0;
+    }
+
+.paso-paso ol li {
+    position: relative;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 4px 0 10px 50px;
+    margin-bottom: 10px;
+    background:#f5f5f5;
+    border-radius: 5px;
+    }
+
+.paso-paso ol li:before {
+    content: counter(lista-personalizada);
+    counter-increment: lista-personalizada;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 8px 8px 8px 5px;
+    background: #50c1df;
+    color: white;
+    height: 45px;
+    }
+
 @media screen and (max-width:768px) {
     .contenedor{
         grid-template-areas:
         "header header"
         "contenido"
-        "widget ."
+        "widget"
         "footer footer";
     }
     .header{
         grid-template-areas:"logo" "navbar";
     }
 
-    .widget .video{
-        position: relative;
-        top:0;
-        left: 0px;
-        width: auto;
-        height: auto;
+    .contenedor .widget{
+        display: grid;
+        margin: 20px auto;
+        grid-gap: 20px;
+
     }
     .contenedor .contenido .form-suscribir{
-        width: 350px;
+        width: 200px;
         background: #50c1df;
         padding: 40px;
         margin: auto;
